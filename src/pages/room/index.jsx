@@ -9,7 +9,7 @@ function Roompage() {
  
  
     const{roomId}=useParams();
-    const vin=window.location.href
+    const vin=window.location.href;
     const myMeeting = async(element)=>{
         const appID=1520029486;
         const serverSecret="5d03ef86ac072456f0d3321b21de0197";
