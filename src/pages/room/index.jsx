@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 import {useParams} from "react-router-dom";
 import {ZegoUIKitPrebuilt} from "@zegocloud/zego-uikit-prebuilt"
 // import dotenv from "dotenv";
@@ -6,10 +6,8 @@ import {ZegoUIKitPrebuilt} from "@zegocloud/zego-uikit-prebuilt"
 
 import "./s.css";
 function Roompage() {
-  const [Url,seturl]=useState('none');
-  useEffect(()=>{
-    seturl(window.location.href)
-  },[])
+ 
+ 
     const{roomId}=useParams();
     const vin=window.location.href
     const myMeeting = async(element)=>{
