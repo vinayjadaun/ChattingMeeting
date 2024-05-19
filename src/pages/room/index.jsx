@@ -5,14 +5,15 @@ import {ZegoUIKitPrebuilt} from "@zegocloud/zego-uikit-prebuilt"
 // dotenv.config()
 
 import "./s.css";
+
 function Roompage() {
- 
+    
  
     const{roomId}=useParams();
     const vin=window.location.href;
     const myMeeting = async(element)=>{
-        const appID=1520029486;
-        const serverSecret="5d03ef86ac072456f0d3321b21de0197";
+        const appID=449344525;
+        const serverSecret="b576b7aa7f51aed49487df7ec40ef437";
         const kitToken=ZegoUIKitPrebuilt.generateKitTokenForTest(appID,serverSecret,roomId,Date.now().toString(),"Vinay Jadaun");
         const zc=ZegoUIKitPrebuilt.create(kitToken);
         // ${roomId}
