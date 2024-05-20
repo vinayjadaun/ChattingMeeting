@@ -33,7 +33,7 @@ function Roompage() {
     }
   return (
    
-    <div className="UI"><div ref={(myMeeting)}/></div>
+    <div className="UI"><div className='meeting' ref={(myMeeting)}/></div>
   )
 }
 
