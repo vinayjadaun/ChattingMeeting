@@ -14,10 +14,14 @@ import './style.css';
   },[navigate,value]);
 
   return (
-    <div className="UI" >
+<div className="UI" >
+    <h2 className='info'>Please Enter the Meeting Code</h2>
+      
       <input className="input" value={value} onChange={(e)=>setvalue(e.target.value)} type="text" palceholder="Enter Room Code"/>
       <button className="btn" onClick={handleJoinRoom}>JOIN</button>
     </div>
+  
+  
   )
 }
 
