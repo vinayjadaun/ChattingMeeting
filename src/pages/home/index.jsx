@@ -15,7 +15,7 @@ import './style.css';
 
   return (
 <div className="UI" >
-    <h2 className='info'>Please Enter the Meeting Code</h2>
+    <h2 className='info'>Please Enter Your Unique Meeting ID</h2>
       
       <input className="input" value={value} onChange={(e)=>setvalue(e.target.value)} type="text" palceholder="Enter Room Code"/>
       <button className="btn" onClick={handleJoinRoom}>JOIN</button>
